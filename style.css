@@ -200,4 +200,9 @@ body {
   .character {
     filter: none !important;
   }
+
+@media (hover: hover) and (pointer: fine) {
+  .character-area:hover .character {
+  filter: sepia(1) saturate(1.5) hue-rotate(10deg) brightness(1.1);
+  }
 }
