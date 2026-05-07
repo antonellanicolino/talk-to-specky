@@ -140,7 +140,7 @@ body {
   }
 
   .title {
-    transform: rotate(-5deg);
+    transform: rotate(0deg);
     height: 20vh;
   }
 
@@ -169,5 +169,11 @@ body {
     left: auto;
     text-align: right;
     font-size: 26px;
+  }
+
+  @media (hover: none), (pointer: coarse) {
+  .character-area:hover .character,
+  .character-area:active .character {
+    filter: none !important;
   }
 }
