@@ -56,4 +56,4 @@ const index = {
   head: 0,
   torso: 0,
   lower: 0
-});
+};
