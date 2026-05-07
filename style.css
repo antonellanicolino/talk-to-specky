@@ -130,6 +130,10 @@ body {
   line-height: 0.8;
 }
 
+#dialogueIcon {
+  display: none;
+}
+
 
 
 @media (max-width: 768px) {
@@ -176,7 +180,17 @@ body {
   }
 
   .character-area:hover .character {
-   filter: none;
-   transition: filter 0.2s ease;
+    filter: none;
+    transition: filter 0.2s ease;
    }
+
+  #dialogueIcon {
+    display: block;
+    position: fixed;
+    bottom: 145px;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+    z-index: 999;
+  }
 }
