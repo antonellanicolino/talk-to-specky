@@ -132,11 +132,13 @@ body {
 
 @media (max-width: 768px) {
 
-  .header {
-    text-align: left;
-    top: 15px;
-    left: 10px;
-  }
+ .header {
+   position: fixed;
+   top: 15px;
+   left: 10px;
+   transform: none;
+   text-align: left;
+ }
 
   .title {
     transform: rotate(0deg);
