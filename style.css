@@ -130,6 +130,10 @@ body {
   line-height: 0.8;
 }
 
+.mobileRuler {
+  display: none;
+}
+
 @media (max-width: 768px) {
 
  .header {
@@ -177,4 +181,11 @@ body {
   filter: none;
   transition: filter 0.2s ease;
   }
+
+  .mobileRuler {
+  display: block;
+  position: absolute;
+  left: -40px;
+  top: 0;
+  height: 100%;
 }
