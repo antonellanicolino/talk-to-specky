@@ -140,11 +140,11 @@ body {
    text-align: left;
  }
 
-  .title {
-  height: auto;
-  width: 100vw;
-  max-width: 220px;
-  }
+ .title {
+   height: auto;
+   width: 100vw;
+   max-width: 320px;
+ }
 
   .character {
     height: 50vh;
