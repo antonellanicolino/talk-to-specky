@@ -59,13 +59,10 @@ const index = {
 };
 
 const character = document.querySelector(".character");
+const area = document.querySelector(".character-area");
 
-function flashGold() {
+area.addEventListener("click", () => {
   character.classList.remove("gold");
-  void character.offsetWidth;
+  void character.offsetWidth; // restart animation cleanly
   character.classList.add("gold");
-
-  setTimeout(() => {
-    character.classList.remove("gold");
-  }, 200);
-}
+});
