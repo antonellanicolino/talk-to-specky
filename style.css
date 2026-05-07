@@ -133,15 +133,15 @@ body {
 @media (max-width: 768px) {
 
   .header {
-    text-align: center;
-    left: 50%;
+    text-align: left;
     transform: translateX(-50%);
     top: 15px;
+    left: 10px;
   }
 
   .title {
     transform: rotate(0deg);
-    height: 20vh;
+    height: 10vh;
   }
 
   .character {
