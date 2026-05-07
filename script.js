@@ -61,13 +61,11 @@ const index = {
 const character = document.querySelector(".character");
 
 function flashGold() {
+  character.classList.remove("gold");
+  void character.offsetWidth;
   character.classList.add("gold");
 
-  clearTimeout(character._goldTimer);
-
-  character._goldTimer = setTimeout(() => {
+  setTimeout(() => {
     character.classList.remove("gold");
   }, 200);
 }
-
-document.querySelector(".character-area").addEventListener("click", flashGold);
