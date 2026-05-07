@@ -1,0 +1,182 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "SpeckyFont";
+  src: url("fonts/OrionChalkScratch.ttf") format("truetype");
+}
+
+body {
+ background-image: url("images/paperbackground1.jpeg");
+ background-size: cover;
+ background-position: center center;
+ background-repeat: no-repeat;
+ min-height: 100vh;
+ margin: 0;
+ overflow: hidden;
+}
+
+.header {
+  text-align: left;
+  position: fixed;
+  top: 30px;
+  left: 50px;
+}
+
+.title {
+  transform: rotate(-15deg);
+  display: inline-block;
+  height: 25vh;
+}
+
+.scene {
+  position: fixed;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.character-area {
+  position: relative;
+  width: fit-content;
+  transform: translateY(-40px);
+}
+
+.character {
+  height: 65vh;
+  width: auto;
+  transition: opacity 0.2s ease;
+}
+
+.character-area:hover .character {
+  filter: sepia(1) saturate(1.5) hue-rotate(10deg) brightness(1.1);
+  transition: filter 0.2s ease;
+}
+
+.zone {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.head {
+  top: 0;
+  height: 40%;
+  cursor: url("images/brain.png") 16 16, auto;
+}
+
+.torso {
+  top: 40%;
+  height: 35%;
+  cursor: url("images/heart.png") 16 16, auto;
+}
+
+.lower {
+  top: 65%;
+  height: 35%;
+  width: 80%;
+  left: 10%;
+  cursor: url("images/pants.png") 16 16, auto;
+}
+
+.textBox {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  width: 650px;
+  height: auto;
+}
+
+#dialogue {
+  position: absolute;
+  top: 20;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: "SpeckyFont", sans-serif;
+  font-size: 60px;
+  pointer-events: none;
+}
+
+.textImg {
+  width: 650px;
+  height: auto;
+  display: block;
+  opacity: 0.75;
+}
+
+.credits {
+  position: fixed;
+  bottom: 15px;
+  left: 45px;
+  font-family: "SpeckyFont", sans-serif;
+  font-size: 40px;
+}
+
+.credits div {
+  margin: 0;
+  padding: 0;
+  line-height: 0.8;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .header {
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15px;
+  }
+
+  .title {
+    transform: rotate(-5deg);
+    height: 20vh;
+  }
+
+  .character {
+    height: 50vh;
+  }
+
+  .textBox {
+    width: 80%;
+  }
+
+  #dialogue {
+    width: 85%;
+    font-size: 48px;
+  }
+
+  .textImg {
+    width: 300px;
+    height: 200px;
+  }
+
+  .credits {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    left: auto;
+    text-align: right;
+    font-size: 26px;
+  }
+
+}
+
+@media (hover: none) {
+  .character-area:hover .character {
+    filter: none;
+  }
+}
