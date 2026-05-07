@@ -171,9 +171,8 @@ body {
     font-size: 26px;
   }
 
-  @media (hover: none), (pointer: coarse) {
-  .character-area:hover .character,
-  .character-area:active .character {
-    filter: none !important;
+  .character-area:hover .character {
+  filter: none;
+  transition: filter 0.2s ease;
   }
 }
