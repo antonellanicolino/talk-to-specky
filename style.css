@@ -58,8 +58,16 @@ body {
 }
 
 .character.gold {
-  filter: sepia(1) saturate(1.5) hue-rotate(10deg) brightness(1.1);
-  transition: filter 0.2s ease;
+  animation: goldFlash 0.2s ease;
+}
+
+@keyframes goldFlash {
+  0% {
+    filter: none;
+  }
+  100% {
+    filter: sepia(1) saturate(1.5) hue-rotate(10deg) brightness(1.1);
+  }
 }
 
 .zone {
