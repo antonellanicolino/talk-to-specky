@@ -68,15 +68,15 @@ function setNextText(type) {
   textBox.textContent = lines[i];
 
   if (type === "head") {
-    icon.src = ".images/brain.png";
+    icon.src = "./images/brain.png";
   }
 
   if (type === "torso") {
-    icon.src = ".images/heart.png";
+    icon.src = "./images/heart.png";
   }
 
   if (type === "lower") {
-    icon.src = ".images/pants.png";
+    icon.src = "./images/pants.png";
   }
 
   index[type] = (i + 1) % lines.length;
