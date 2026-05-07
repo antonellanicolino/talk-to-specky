@@ -57,3 +57,17 @@ const index = {
   torso: 0,
   lower: 0
 };
+
+const character = document.querySelector(".character");
+
+function flashGold() {
+  character.classList.add("gold");
+
+  clearTimeout(character._goldTimer);
+
+  character._goldTimer = setTimeout(() => {
+    character.classList.remove("gold");
+  }, 200);
+}
+
+document.querySelector(".character-area").addEventListener("click", flashGold);
