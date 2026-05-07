@@ -141,8 +141,9 @@ body {
  }
 
   .title {
-    transform: rotate(0deg);
-    height: 30vh;
+  height: auto;
+  width: 70vw;
+  max-width: 220px;
   }
 
   .character {
