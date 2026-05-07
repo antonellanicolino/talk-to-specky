@@ -134,7 +134,6 @@ body {
 
   .header {
     text-align: left;
-    transform: translateX(-50%);
     top: 15px;
     left: 10px;
   }
