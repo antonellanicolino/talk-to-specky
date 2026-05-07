@@ -57,3 +57,27 @@ const index = {
   torso: 0,
   lower: 0
 };
+
+const icon = document.getElementById("dialogueIcon");
+
+function setNextText(type) {
+
+  const lines = messages[type];
+  const i = index[type];
+
+  textBox.textContent = lines[i];
+
+  if (type === "head") {
+    icon.src = "images/brain.png";
+  }
+
+  if (type === "torso") {
+    icon.src = "images/heart.png";
+  }
+
+  if (type === "lower") {
+    icon.src = "images/pants.png";
+  }
+
+  index[type] = (i + 1) % lines.length;
+};
