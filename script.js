@@ -56,13 +56,4 @@ const index = {
   head: 0,
   torso: 0,
   lower: 0
-};
-
-const character = document.querySelector(".character");
-const area = document.querySelector(".character-area");
-
-area.addEventListener("click", () => {
-  character.classList.remove("gold");
-  void character.offsetWidth; // restart animation cleanly
-  character.classList.add("gold");
 });
