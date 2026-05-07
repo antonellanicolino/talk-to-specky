@@ -46,11 +46,6 @@ body {
   transform: translateY(-40px);
 }
 
-.character-area:active .character {
-  filter: sepia(1) saturate(1.5) hue-rotate(10deg) brightness(1.1);
-  transition: filter 0.1s ease;
-}
-
 .character {
   height: 65vh;
   width: auto;
@@ -60,19 +55,6 @@ body {
 .character-area:hover .character {
   filter: sepia(1) saturate(1.5) hue-rotate(10deg) brightness(1.1);
   transition: filter 0.2s ease;
-}
-
-.character.gold {
-  animation: goldFlash 0.2s ease;
-}
-
-@keyframes goldFlash {
-  0% {
-    filter: none;
-  }
-  100% {
-    filter: sepia(1) saturate(1.5) hue-rotate(10deg) brightness(1.1);
-  }
 }
 
 .zone {
@@ -190,19 +172,3 @@ body {
     text-align: right;
     font-size: 26px;
   }
-
-}
-
-@media (hover: none) and (pointer: coarse) {
-  .character-area:hover .character {
-    filter: none !important;
-    
-  .character {
-    filter: none !important;
-  }
-
-@media (hover: hover) and (pointer: fine) {
-  .character-area:hover .character {
-  filter: sepia(1) saturate(1.5) hue-rotate(10deg) brightness(1.1);
-  }
-}
