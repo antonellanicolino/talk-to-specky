@@ -57,6 +57,11 @@ body {
   transition: filter 0.2s ease;
 }
 
+.character.gold {
+  filter: sepia(1) saturate(1.5) hue-rotate(10deg) brightness(1.1);
+  transition: filter 0.2s ease;
+}
+
 .zone {
   position: absolute;
   left: 0;
@@ -175,8 +180,9 @@ body {
 
 }
 
-@media (hover: none) {
+@media (hover: hover) {
   .character-area:hover .character {
-    filter: none;
+    filter: sepia(1) saturate(1.5) hue-rotate(10deg) brightness(1.1);
+    transition: filter 0.2s ease;
   }
 }
