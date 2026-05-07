@@ -81,3 +81,30 @@ function setNextText(type) {
 
   index[type] = (i + 1) % lines.length;
 };
+
+function setNextText(type) {
+
+  const lines = messages[type];
+  const i = index[type];
+
+  let icon = "";
+
+  if (window.innerWidth <= 768) {
+
+    if (type === "head") {
+      icon = "🧠 ";
+    }
+
+    if (type === "torso") {
+      icon = "❤️ ";
+    }
+
+    if (type === "lower") {
+      icon = "👖 ";
+    }
+
+  }
+
+  textBox.textContent = icon + lines[i];
+  index[type] = (i + 1) % lines.length;
+};
