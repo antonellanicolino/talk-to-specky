@@ -130,9 +130,6 @@ body {
   line-height: 0.8;
 }
 
-.mobileRuler {
-  opacity: 0;
-}
 
 @media (max-width: 768px) {
 
@@ -181,13 +178,4 @@ body {
    filter: none;
    transition: filter 0.2s ease;
    }
-
-  .mobileRuler {
-   opacity: 1;
-   display: block;
-   position: absolute;
-   left: 200px;
-   top: 0;
-   height: 100%;
- }
 }
