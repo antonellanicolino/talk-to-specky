@@ -182,12 +182,14 @@ body {
    filter: none;
    transition: filter 0.2s ease;
    }
-
+  
   #dialogueIcon {
-   position: fixed 
-   top: 300px
-   left: 300px
-   width: 100px
-   height: 100px 
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 20px;
+    bottom: 55px;
   }
+
 }
