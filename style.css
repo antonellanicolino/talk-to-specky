@@ -184,9 +184,9 @@ body {
    }
 
   #dialogueIcon {
-   position: fixed !important;
-   top: 300px !important;
-   left: 300px !important;
+   position: fixed 
+   top: 300px
+   left: 300px
    width: 100px !important;
    height: 100px !important;
   }
