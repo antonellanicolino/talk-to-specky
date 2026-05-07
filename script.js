@@ -1,43 +1,59 @@
-window.addEventListener("DOMContentLoaded", () => {
+const img = document.querySelector(".character");
 
-  const textBox = document.getElementById("dialogue");
+function blink() {
 
-  const messages = {
-    head: [
-      "You're looking for meaning.",
-      "Think a bit harder.",
-      "Why are you here?",
-      "",
-    ],
-    torso: [
-      "I'm hungry.",
-      "Don't poke me.",
-      "Hihihi, that tickles."
-    ],
-    lower: [
-      "Hey... buy me dinner first.",
-      "That's inappropriate!",
-      "Don't be a weirdo now.",
-      "Nope."
-    ]
-  };
+  img.src = "images/Specky2.png";
 
-  const index = {
-    head: 0,
-    torso: 0,
-    lower: 0
-  };
+  setTimeout(() => {
+    img.src = "images/Specky1.png";
+    setTimeout(blink, Math.random() * 4000 + 2000);
+  }, 120);
+}
 
-  function setNextText(type) {
-    const lines = messages[type];
-    const i = index[type];
+blink();
 
-    textBox.textContent = lines[i];
-    index[type] = (i + 1) % lines.length;
-  }
 
-  document.querySelector(".head").onclick = () => setNextText("head");
-  document.querySelector(".torso").onclick = () => setNextText("torso");
-  document.querySelector(".lower").onclick = () => setNextText("lower");
 
+const textBox = document.getElementById("dialogue");
+
+document.querySelector(".head").onclick = () => setNextText("head");
+document.querySelector(".torso").onclick = () => setNextText("torso");
+document.querySelector(".lower").onclick = () => setNextText("lower");
+
+function setNextText(type) {
+  const lines = messages[type];  
+  const i = index[type];        
+
+  textBox.textContent = lines[i];
+
+  index[type] = (i + 1) % lines.length;
+}
+
+const messages = {
+
+  head: [
+    "You're looking for meaning.",
+    "Think a bit harder.",
+    "Why are you here?",
+    "",
+  ],
+
+  torso: [
+    "I'm hungry.",
+    "Don't poke me.",
+    "Hihihi, that tickles."
+  ],
+
+  lower: [
+    "Hey... buy me dinner first.",
+    "That's inappropriate!",
+    "Don't be a weirdo now.",
+    "Nope."
+  ]
+};
+
+const index = {
+  head: 0,
+  torso: 0,
+  lower: 0
 });
