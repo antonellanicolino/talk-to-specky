@@ -161,7 +161,7 @@ body {
   position: absolute;
   top: 70%;
   left: 50%;
-  transform: translate(calc(-50% - 40px), -50%);
+  transform: translate(-50%, -50%) translate(20px, 20px);
   width: 90%;
   display: flex;
   align-items: center;
