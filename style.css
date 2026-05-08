@@ -107,6 +107,7 @@ body {
   font-family: "SpeckyFont", sans-serif;
   font-size: 60px;
   pointer-events: none;
+  line-height: 0.8;
 }
 
 .textImg {
