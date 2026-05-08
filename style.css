@@ -158,15 +158,15 @@ body {
   }
 
   #dialogue {
-    width: 80%;
-    font-size: 48px;
-    line-height: 0.75em;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    white-space: pre-line;
-    top: 50%;
-    transform: translateY(-50%);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 80%;
+   font-size: 48px;
+   display: block;
+   text-align: center;
+   line-height: 0.8;
   }
 
   .textImg {
