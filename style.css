@@ -158,8 +158,9 @@ body {
   }
 
   #dialogue {
-    width: 85%;
+    width: 80%;
     font-size: 48px;
+    line-height: 0.6;
   }
 
   .textImg {
