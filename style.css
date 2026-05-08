@@ -157,19 +157,23 @@ body {
     width: 80%;
   }
 
-  #dialogue {
-   position: absolute;
-   top: 20px;
-   left: -50px;
-   width: 90%;
-   height: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   font-size: 48px;
-   line-height: 0.8;
-   text-align: center;
-  }
+ #dialogue {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(calc(-50% - 50px), -50%);
+
+  width: 90%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 48px;
+  line-height: 0.8;
+  text-align: center;
+  } 
 
   .emoji {
    display: inline-block;
