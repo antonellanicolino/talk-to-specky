@@ -159,9 +159,9 @@ body {
 
  #dialogue {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
-  transform: translate(calc(-50% - 30px), -50%);
+  transform: translate(calc(-50% - 40px), -50%);
   width: 90%;
   display: flex;
   align-items: center;
