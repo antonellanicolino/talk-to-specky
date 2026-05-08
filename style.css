@@ -160,7 +160,7 @@ body {
   #dialogue {
    position: absolute;
    top: 20px;
-   left: 15px;
+   left: 10px;
    width: 80%;
    height: 100%;
    display: flex;
