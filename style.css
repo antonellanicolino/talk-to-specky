@@ -160,7 +160,13 @@ body {
   #dialogue {
     width: 80%;
     font-size: 48px;
-    line-height: 0.6;
+    line-height: 0.75em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    white-space: pre-line;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .textImg {
