@@ -160,8 +160,8 @@ body {
   #dialogue {
    position: absolute;
    top: 20px;
-   left: 10px;
-   width: 70%;
+   left: 0px;
+   width: 90%;
    height: 100%;
    display: flex;
    align-items: center;
