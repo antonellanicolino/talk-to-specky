@@ -105,6 +105,7 @@ function setNextText(type) {
 
   }
 
-  textBox.textContent = icon + lines[i];
+  textBox.innerHTML = `<span class="emoji">${icon}</span>${lines[i]}`;
+
   index[type] = (i + 1) % lines.length;
 };
