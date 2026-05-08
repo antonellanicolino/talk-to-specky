@@ -179,4 +179,8 @@ body {
     filter: none;
     transition: filter 0.2s ease;
    }
+
+  .emoji {
+  font-size: 28px;
+  }
 }
