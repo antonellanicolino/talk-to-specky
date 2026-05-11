@@ -173,8 +173,10 @@ body {
 
    text-align: center;
 
-   font-size: 38px;
+   font-size: 40px;
    line-height: 1;
+
+   padding-top: 20px;
   }
 
   .emoji {
