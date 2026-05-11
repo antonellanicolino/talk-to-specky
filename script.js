@@ -13,11 +13,6 @@ function blink() {
 blink();
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  textBox.textContent = "Click on Specky.";
-});
-
-
 const textBox = document.getElementById("dialogue");
 
 document.querySelector(".head").onclick = () => setNextText("head");
@@ -90,3 +85,7 @@ textBox.innerHTML = `<span style="font-size: 0.45em;">${icon}</span>${lines[i]}`
   index[type] = (i + 1) % lines.length;
   
 };
+
+window.addEventListener("load", () => {
+  textBox.textContent = "Click on Specky.";
+});
