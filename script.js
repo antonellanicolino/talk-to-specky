@@ -13,12 +13,12 @@ function blink() {
 blink();
 
 
-
-const textBox = document.getElementById("dialogue");
-
 document.addEventListener("DOMContentLoaded", () => {
   textBox.textContent = "Click on Specky.";
 });
+
+
+const textBox = document.getElementById("dialogue");
 
 document.querySelector(".head").onclick = () => setNextText("head");
 document.querySelector(".torso").onclick = () => setNextText("torso");
