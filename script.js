@@ -16,6 +16,8 @@ blink();
 
 const textBox = document.getElementById("dialogue");
 
+textBox.textContent = "Click on Specky.";
+
 document.querySelector(".head").onclick = () => setNextText("head");
 document.querySelector(".torso").onclick = () => setNextText("torso");
 document.querySelector(".lower").onclick = () => setNextText("lower");
