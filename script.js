@@ -30,11 +30,8 @@ function setNextText(type) {
 
 const messages = {
 
-    startup: [
-    "Click on Specky."
-  ],
-
   head: [
+    "Click on Specky.",
     "You're looking for meaning.",
     "Think a bit harder.",
     "Why are you here?",
@@ -56,8 +53,7 @@ const messages = {
 };
 
 const index = {
-  startup: 0,
-  head: 0,
+  head: 1,
   torso: 0,
   lower: 0
 };
@@ -90,5 +86,3 @@ textBox.innerHTML = `<span style="font-size: 0.45em;">${icon}</span>${lines[i]}`
   index[type] = (i + 1) % lines.length;
   
 };
-
-setNextText("startup");
