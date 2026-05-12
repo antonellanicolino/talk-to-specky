@@ -52,7 +52,6 @@ const messages = {
     "Something has to exist.",
     "Nothingness is impossible.",
     "I'm pixels, you're particles.",
-    "Maybe meaning's a red herring?",
   ],
 
   torso: [
@@ -64,7 +63,6 @@ const messages = {
     "I love photon snacks.",
     "I can't exercise much.",
     "I sit here all day.",
-    "Waiting for virtual travelers.",
   ],
 
   lower: [
