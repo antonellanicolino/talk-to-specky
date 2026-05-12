@@ -30,6 +30,10 @@ function setNextText(type) {
 
 const messages = {
 
+    startup: [
+    "Click on Specky."
+  ],
+
   head: [
     "You're looking for meaning.",
     "Think a bit harder.",
