@@ -56,6 +56,7 @@ const messages = {
 };
 
 const index = {
+  startup: 0,
   head: 0,
   torso: 0,
   lower: 0
@@ -89,3 +90,5 @@ textBox.innerHTML = `<span style="font-size: 0.45em;">${icon}</span>${lines[i]}`
   index[type] = (i + 1) % lines.length;
   
 };
+
+setNextText("startup");
