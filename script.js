@@ -58,7 +58,7 @@ const messages = {
   torso: [
     "I'm hungry.",
     "Don't poke me!",
-    "Hihihi, that tickles."
+    "Hihihi, that tickles.",
     "Do you like my outfit?",
     "Why I'm chubby, you ask?",
     "I love photon snacks.",
@@ -71,7 +71,7 @@ const messages = {
     "Hey... buy me dinner first.",
     "That's inappropriate!",
     "Don't be a weirdo now.",
-    "Nope."
+    "Nope.",
   ]
 };
 
